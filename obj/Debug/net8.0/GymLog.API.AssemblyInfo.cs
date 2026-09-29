@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymLog.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c742347938c96ddfa9506184fd2cbc5bf71c35e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymLog.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymLog.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

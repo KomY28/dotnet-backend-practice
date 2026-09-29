@@ -9,6 +9,7 @@ This is a learning log — I'm practicing backend development with C# and .NET 8
 | Day | Project | What it covered |
 |-----|---------|------------------|
 | [Day 1](./day-01-gymlog-setup/GymLog.API) | GymLog API - Setup & DB | Setting up a Web API (.NET 8, Controllers), Domain Models (`Exercise`, `WorkoutLog`), 1-to-many relationships, Entity Framework Core setup, `DbContext` inheritance, `appsettings.json` connection strings, Dependency Injection in `Program.cs`, Dockerized MS SQL Server (on Apple Silicon), and Initial EF Core Migrations (`dotnet ef migrations add`, `dotnet ef database update`). |
+| [Day 2](./day-02-gymlog-crud/GymLog.API) | GymLog API - CRUD & DTOs | Implementing full CRUD endpoints (GET, POST, PUT, DELETE) for the `ExercisesController`. Introduced Data Transfer Objects (DTOs) to separate internal database models from external API contracts. Used `[FromBody]` and `[FromRoute]` attributes, manual mapping, and Entity Framework Core change tracking. Tested API behavior via Swagger. |
 
 ## How I'm learning
 
@@ -32,8 +33,9 @@ You need to have an MS SQL Server container running in Docker. Example command:
 `docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourPassword123" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest`
 
 **Running the app:**
-Go into that day's project folder (where the `.csproj` file is located), then:
+Go into that day's project folder (where the `.csproj` file is located), then execute the following commands in your terminal:
 
 ```bash
 dotnet restore
+dotnet ef database update
 dotnet run

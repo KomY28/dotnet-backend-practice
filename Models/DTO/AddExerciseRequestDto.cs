@@ -1,0 +1,8 @@
+namespace GymLog.API.Models.DTO;
+
+public class AddExerciseRequestDto
+{
+    public string Name { get; set; }
+    public string MuscleGroup { get; set; }
+    public int DifficulityLevel { get; set; }
+}
