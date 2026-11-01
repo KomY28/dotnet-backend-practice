@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/GymLog.API.props" />
-</Project>
